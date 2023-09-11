@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@900&display=swap" rel="stylesheet">
+  <title>Mondrian Project</title>
+  <style>
+
+    body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 40px;
+    }
+    .container{
+      display: grid;
+      height: 748px;
+      width: 748px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+      background-color: black;
+      border: 2px solid black;
+    }
+    .square{
+      background-color:#F0F1EC;
+      order: 2;
+
+    }
+    .red{
+      background-color: #E72F24;
+      height: 418px;
+      order: 1;
+    }
+    .blue{
+      background-color: #004592;
+      order: 3;
+      height: 130px;
+      width: 50px;
+      grid-row-start: 2;
+      grid-column-start: 4;
+    }
+    .yellow{
+      background-color: #F9D01E;
+      order: 4;
+      width: 198px;
+      height: 20px;
+      grid-column-start: 2;
+      grid-row-start: 4;
+    }
+    .black{
+      background-color: #232629;
+      order: 5;
+      height: 20px;
+      width: 153px;
+      grid-row-start:4;
+      grid-column-start: 3;
+    }
+    .snd{
+      grid-column-start:2;
+      grid-column-end: 5;
+    }
+    .erd{
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+    .frd{
+      grid-column-start: 1;
+      grid-column-end:2 ;
+    }
+    .mid{
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+    .lst{
+      grid-column-end: 5;
+      grid-row-start: 3;
+      grid-row-end: 5;
+    }
+    h1{
+      text-transform: uppercase;
+      font-family: 'League Spartan', sans-serif;
+      padding: 0;
+      margin: 0;
+    }
+    p{
+      margin: 0;
+      padding: 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Mondrian Project</h1>
+  <p>Please view this page on a Desktop!</p>
+  <div class="container">
+    <div class="square red"></div>
+    <div class="square blue"></div>
+    <div class="square yellow"></div>
+    <div class="square black"></div>
+    <div class="square snd"></div>
+    <div class="square erd"></div>
+    <div class="square frd"></div>
+    <div class="square mid"></div>
+    <div class="square lst"></div>
+  </div>
+</body>
+
+</html>
